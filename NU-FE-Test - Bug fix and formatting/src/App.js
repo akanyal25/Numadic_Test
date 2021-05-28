@@ -77,7 +77,7 @@ function App() {
                   
                   <TableRow key={country.callingCodes+country.name} >   {/* Was missing key after using Array map func. */}
                     <TableCell component="th" scope="row">
-                      {country.name}
+                      {country.name}                               {/* Country name and capital needed to be swapped */}
                     </TableCell>
                     <TableCell align="right">
                       <img src={country.flag} alt="" width="32px" />   {/* the image url was in country.flag and not country flags */}
